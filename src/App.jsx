@@ -1,6 +1,6 @@
 import QRCode from "qrcode";
 import { useState } from "react";
-import videobg from "../src/assets/background.mp4"
+
 
 function App() {
   const [url, setUrl] = useState("");
