@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  text-align: center;
+  color: #fff;
+
+}
+.app{ 
+  background: url("../src/assets/bg.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.qr-container{
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-container h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.qr-container input{
+  appearance: none;
+  outline: none;
+  border:#1b2034;
+  box-shadow: #1b2034;
+  background: #eee;
+  width: 100%;
+  height: 2.5rem;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.glass button{
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor:pointer;
+  color: #9acdd6;
+  font-size: 1.5rem;
+  line-height: 3;
+  text-decoration: none;
+}
+
+/*Glassmorphism effect*/
+.glass{  
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.162);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+/*Download btn*/
+.img-container a{
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor:pointer;
+  color: #9acdd6;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.qr-container img {
+  display: block;
+  width: 80%;
+  max-width: 380px;
+  margin-bottom: 1rem;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
