@@ -43,16 +43,111 @@ body{
   margin-right: 1rem;
 }
 
-.glass button{
+.btn{
+  font-weight:500;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+
+/*Download btn*/
+.img-container a{
   appearance: none;
   outline: none;
   border: none;
   background: none;
   cursor:pointer;
-  color: #9acdd6;
-  font-size: 1.5rem;
-  line-height: 3;
+  font-weight:500 !important;
+  font-family: inherit;
+  font-size: 1.2rem !important;
+  line-height: 1;
   text-decoration: none;
+  margin-top: 1rem;
+}
+
+.img-container a {
+  --color: #0077ff;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 0.8rem;
+  position: relative;
+  background-color: #15222f;
+}
+
+.img-container a::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.img-container a:hover {
+  color: white;
+}
+
+.img-container a:before {
+  top: 100%;
+  left: 100%;
+  transition: .4s all;
+}
+
+.img-container a:hover::before {
+  top: -50px;
+  left: -30px;
+}
+
+
+button {
+  --color: #0077ff;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 0.8rem;
+  position: relative;
+  background-color: #15222f;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: .4s all;
+}
+
+button:hover::before {
+  top: -50px;
+  left: -30px;
 }
 
 /*Glassmorphism effect*/
@@ -67,19 +162,6 @@ body{
 
 }
 
-/*Download btn*/
-.img-container a{
-  appearance: none;
-  outline: none;
-  border: none;
-  background: none;
-  cursor:pointer;
-  color: #9acdd6;
-  font-size: 1.5rem;
-  line-height: 1;
-  text-decoration: none;
-  margin-top: 1rem;
-}
 
 .qr-container img {
   display: block;

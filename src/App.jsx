@@ -35,13 +35,13 @@ const generateQRcode = () => {
           value={url}
           onChange={(evt) => setUrl(evt.target.value)}
         />
-        <button type="button" onClick={generateQRcode}>Generate</button>
+        <button type="button" class="btn" onClick={generateQRcode}>Generate</button>
            
            
      <div className="img-container">
             {qrcode && <>
               <img src={qrcode}/>
-              <a href={qrcode} download="qrcode.png">Download</a>
+              <a href={qrcode} download="qrcode.png" class="down-btn">Download</a>
               </>} 
 </div>
         </div>
