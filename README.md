@@ -1,7 +1,7 @@
 <br>
 <div align="center">
 
-<img style="height: 300px;" src="./template.png">
+<img style="height: 100%;" src="./template.png">
 <br>
 <br>
 
