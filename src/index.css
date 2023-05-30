@@ -8,13 +8,21 @@
 body{
   text-align: center;
   color: #fff;
-
-}
-.app{ 
   background: url("../src/assets/bg.jpg");
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+.app{ 
+  
+  width: 100%;
+  height: 100%;
 }
 
 .qr-container{

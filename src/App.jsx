@@ -1,5 +1,6 @@
 import QRCode from "qrcode";
 import { useState } from "react";
+import "../src/index.css";
 
 
 function App() {
